@@ -65,11 +65,10 @@ export default class News extends Component {
         <h1 className="text-center">{this.props.heading} Headlines</h1>
         {this.state.loading && <Spinner></Spinner>}
         <InfiniteScroll
-            dataLength={this.state.articles.length}
+            dataLength={this.state.articles && this.state.articles.length}
             next={this.fetchMoreData}
-            hasMore={this.state.articles.length !== this.state.totalResults}
+            hasMore={this.state.articles && this.state.articles.length !== this.state.totalResults}
             loader={this.state.loading && <Spinner></Spinner>}
-            endMessage={<p style={{ textAlign: 'center', color : "white"}}><b>Yay! You have seen it all</b></p>}
           >
         <div className="container my-3">
         <div className="row my-3">
