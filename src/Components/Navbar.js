@@ -38,12 +38,6 @@ export default class Navbar extends Component {
                 <Link className="nav-link active mx-3" to="/About">About NeewsBee</Link>
                 </li>
             </ul>
-            <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button style={{backgroundColor : "#353935" ,width : "50px"}}type="submit">
-                <img src={require("../images/search.png")} style={{height:"18px"}} alt="Search"/>
-                </button>
-            </form>
             </div>
         </div>
         </nav>

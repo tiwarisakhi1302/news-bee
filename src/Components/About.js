@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function About(props) {
   return (
+    <>
     <div className='container my-5' style={{backgroundColor: props.mode==="light" ? "white" : "#282828" , color: props.mode==="light" ? "#282828" : "white"}} >
         <h1>About Us</h1>
         <div className="accordion" id="accordionExample" style={{backgroundColor: props.mode==="light" ? "white" : "#282828" , color: props.mode==="light" ? "#282828" : "white"}}>
@@ -43,8 +44,8 @@ export default function About(props) {
             </div>
         </div>
         </div>
-        
-
     </div>
+    <p style={{position:"absolute", bottom:0, right:0}}><strong>Created By Sakshi Tiwari</strong></p>
+    </>
   )
 }
